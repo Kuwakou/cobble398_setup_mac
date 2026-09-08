@@ -1,0 +1,13 @@
+# .NET build output
+[Bb]in/
+[Oo]bj/
+
+# Node
+node_modules/
+ui/dist/
+
+# Secrets — never commit
+.env
+
+# macOS
+.DS_Store
