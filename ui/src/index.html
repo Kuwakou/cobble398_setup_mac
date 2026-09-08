@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cobble 398 — Week 0</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  body {
+    margin: 0;
+    padding: var(--cobble-space-4);
+    background: var(--cobble-color-bg);
+    color: var(--cobble-color-text);
+    font-family: var(--cobble-font-sans);
+  }
+  .card {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--cobble-space-4);
+    background: var(--cobble-color-surface);
+    border: 1px solid var(--cobble-color-border);
+    border-radius: var(--cobble-radius-md);
+  }
+  h1 { margin: 0 0 var(--cobble-space-2); font-size: 20px; }
+  p.sub { margin: 0 0 var(--cobble-space-4); color: var(--cobble-color-muted); }
+  .pill {
+    display: inline-block;
+    padding: var(--cobble-space-1) var(--cobble-space-3);
+    border-radius: var(--cobble-radius-md);
+    font-family: var(--cobble-font-mono);
+    font-size: 13px;
+  }
+  .pill--pending { background: var(--cobble-color-border); }
+  .pill--ok      { background: var(--cobble-color-ok); }
+  .pill--fail    { background: var(--cobble-color-fail); }
+  pre {
+    margin-top: var(--cobble-space-3);
+    padding: var(--cobble-space-3);
+    background: var(--cobble-color-bg);
+    border: 1px solid var(--cobble-color-border);
+    border-radius: var(--cobble-radius-md);
+    font-family: var(--cobble-font-mono);
+    font-size: 12px;
+    overflow-x: auto;
+  }
+  button {
+    margin-top: var(--cobble-space-3);
+    padding: var(--cobble-space-2) var(--cobble-space-3);
+    background: var(--cobble-color-accent);
+    color: var(--cobble-color-text);
+    border: 0;
+    border-radius: var(--cobble-radius-md);
+    font-family: var(--cobble-font-sans);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Cobble 398 — Week 0 Environment</h1>
+    <p class="sub">Thin UI &rarr; API health endpoint. No direct database access.</p>
+    <span id="status" class="pill pill--pending">checking&hellip;</span>
+    <pre id="detail"></pre>
+    <button id="refresh">Re-check</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
