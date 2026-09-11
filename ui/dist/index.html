@@ -8,56 +8,53 @@
 <style>
   body {
     margin: 0;
-    padding: var(--cobble-space-4);
+    padding: var(--cobble-spacing-lg);
     background: var(--cobble-color-bg);
     color: var(--cobble-color-text);
-    font-family: var(--cobble-font-sans);
+    font-family: var(--cobble-font-base);
   }
   .card {
     max-width: 640px;
     margin: 0 auto;
-    padding: var(--cobble-space-4);
-    background: var(--cobble-color-surface);
-    border: 1px solid var(--cobble-color-border);
-    border-radius: var(--cobble-radius-md);
+    padding: var(--cobble-spacing-lg);
+    background: #ffffff;
+    border: 1px solid var(--cobble-color-secondary);
+    border-radius: 6px;
   }
-  h1 { margin: 0 0 var(--cobble-space-2); font-size: 20px; }
-  p.sub { margin: 0 0 var(--cobble-space-4); color: var(--cobble-color-muted); }
+  p.sub { margin: 0 0 var(--cobble-spacing-lg); color: var(--cobble-color-secondary); }
   .pill {
     display: inline-block;
-    padding: var(--cobble-space-1) var(--cobble-space-3);
-    border-radius: var(--cobble-radius-md);
-    font-family: var(--cobble-font-mono);
+    padding: var(--cobble-spacing-sm) var(--cobble-spacing-md);
+    border-radius: 6px;
     font-size: 13px;
   }
-  .pill--pending { background: var(--cobble-color-border); }
-  .pill--ok      { background: var(--cobble-color-ok); }
-  .pill--fail    { background: var(--cobble-color-fail); }
+  .pill--pending { background: var(--cobble-color-secondary); color: #ffffff; }
+  .pill--ok      { background: #2ea44f; color: #ffffff; }
+  .pill--fail    { background: #d1242f; color: #ffffff; }
   pre {
-    margin-top: var(--cobble-space-3);
-    padding: var(--cobble-space-3);
+    margin-top: var(--cobble-spacing-md);
+    padding: var(--cobble-spacing-md);
     background: var(--cobble-color-bg);
-    border: 1px solid var(--cobble-color-border);
-    border-radius: var(--cobble-radius-md);
-    font-family: var(--cobble-font-mono);
+    border: 1px solid var(--cobble-color-secondary);
+    border-radius: 6px;
     font-size: 12px;
     overflow-x: auto;
   }
   button {
-    margin-top: var(--cobble-space-3);
-    padding: var(--cobble-space-2) var(--cobble-space-3);
-    background: var(--cobble-color-accent);
-    color: var(--cobble-color-text);
+    margin-top: var(--cobble-spacing-md);
+    padding: var(--cobble-spacing-sm) var(--cobble-spacing-md);
+    background: var(--cobble-color-primary);
+    color: #ffffff;
     border: 0;
-    border-radius: var(--cobble-radius-md);
-    font-family: var(--cobble-font-sans);
+    border-radius: 6px;
+    font-family: var(--cobble-font-base);
     cursor: pointer;
   }
 </style>
 </head>
 <body>
   <div class="card">
-    <h1>Cobble 398 — Week 0 Environment</h1>
+    <h1 class="cobble-header">Cobble 398 — Week 0 Environment</h1>
     <p class="sub">Thin UI &rarr; API health endpoint. No direct database access.</p>
     <span id="status" class="pill pill--pending">checking&hellip;</span>
     <pre id="detail"></pre>
