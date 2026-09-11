@@ -1,0 +1,23 @@
+/* Cobble design tokens.
+   PLACEHOLDER VALUES — replace this file with the official Cobble token
+   sheet from the unit materials. Token *names* are consumed by index.html. */
+:root {
+  --cobble-color-bg:      #0f1218;
+  --cobble-color-surface: #171c25;
+  --cobble-color-border:  #263041;
+  --cobble-color-text:    #e6ebf2;
+  --cobble-color-muted:   #8b97a8;
+  --cobble-color-accent:  #3d8bfd;
+  --cobble-color-ok:      #2ea44f;
+  --cobble-color-fail:    #d1242f;
+
+  --cobble-space-1: 4px;
+  --cobble-space-2: 8px;
+  --cobble-space-3: 16px;
+  --cobble-space-4: 24px;
+
+  --cobble-radius-md: 8px;
+
+  --cobble-font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cobble-font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
